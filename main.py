@@ -41,7 +41,7 @@ def check_websites_at_fixed_time():
     """Обёртка для запуска асинхронной проверки в scheduler"""
     asyncio.run(run_check(urls))
 
-schedule.every().day.at("00:47").do(check_websites_at_fixed_time)
+schedule.every().day.at("10:00").do(check_websites_at_fixed_time)
 print("Планировщик запущен. Проверка будет выполняться каждый день в 10:00")
 
 
